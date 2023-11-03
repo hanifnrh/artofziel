@@ -1,6 +1,10 @@
+html {
+    overflow-x: hidden;
+}
+
 .aboutpage {
     background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-        url(/img/clouds.png);
+        url(/img/clouds.webp);
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -81,7 +85,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(/img/paper3.png);
+    background-image: url(/img/paper3.webp);
     background-repeat: no-repeat;
     background-size: cover;
     border-bottom: solid 0.3rem white;
@@ -113,6 +117,7 @@ h3, h1, p {
     justify-content: flex-start;
     width: 70vh;
 }
+
 .knowmore > .text {
     display: flex;
     align-items: center;
@@ -128,7 +133,7 @@ h3, h1, p {
     justify-content: center;
     align-items: center;
     height: 90vh;
-    background-image: url(/img/texture.jpg);
+    background-image: url(/img/texture.webp);
     background-size: cover;
 }
 
@@ -182,7 +187,7 @@ h3, h1, p {
     justify-content: center;
     align-items: center;
     height: 90vh;
-    background-image: url(/img/paper2.png);
+    background-image: url(/img/paper2.webp);
     background-size: cover;
 }
 
@@ -319,18 +324,22 @@ h3, h1, p {
 @media only screen and (max-width: 600px) {
     .third-wrapper{
         height: 200vh;
+        width: 100vw;
     }
 
     .third {
         height: 210vh;
+        width: 100vw;
     }
 
     .fourth-wrapper{
         height: 140vh;
+        width: 100vw;
     }
 
     .fourth {
         height: 140vh;
+        width: 100vw;
     }
     .headertwo h1 {
         line-height: 1;
@@ -345,6 +354,70 @@ h3, h1, p {
 
     .knowmore > .text > .headerone {
         justify-content: center;
+    }
+    .knowmore > .text > .headertwo {
+        width: 80%;
+    }
+
+    .fourth .fourth-wrapper .commission2 .class {
+        text-align: center;
+        width: 50%;
+        font-family: Garamond;
+        font-size: 1.4rem;
+        color: white;
+        margin: 1rem;
+        margin-right: 2rem;
+        margin-left: 2rem;
+    }
+
+    .fourth .fourth-wrapper .commission .class {
+        text-align: center;
+        width: 50%;
+        font-family: Garamond;
+        font-size: 1.4rem;
+        color: white;
+        margin: 1rem;
+        margin-right: 2rem;
+        margin-left: 2rem;
+    }
+}
+
+@media only screen and (max-width: 390px) {
+    .third-wrapper{
+        height: 200vh;
+        width: 100vw;
+    }
+
+    .third {
+        height: 210vh;
+        width: 100vw;
+    }
+
+    .fourth-wrapper{
+        height: 140vh;
+        width: 100vw;
+    }
+
+    .fourth {
+        height: 140vh;
+        width: 100vw;
+    }
+    .headertwo h1 {
+        line-height: 1;
+        text-align: center;
+    }
+
+    .text p {
+        line-height: 1;
+        text-align: center;
+        margin-top: 1rem;
+    }
+
+    .knowmore > .text > .headerone {
+        justify-content: center;
+    }
+    .knowmore > .text > .headertwo {
+        width: 80%;
     }
 
     .fourth .fourth-wrapper .commission2 .class {

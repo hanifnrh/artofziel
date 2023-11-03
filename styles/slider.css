@@ -102,3 +102,19 @@ i {
         display: none;
     }
 }
+
+@media only screen and (max-width:391px){
+
+    .second > .img-wrapper img {
+        width: 100vw !important;
+        height: auto !important;
+    }
+
+    .knowmore {
+        width: 100vw !important;
+    }
+
+    .knowmore > .text {
+        width: 70% !important;
+    }
+}
