@@ -1,0 +1,338 @@
+.footer-section {
+    /* background-image: url(/img/prism.png); */
+    background-color: white;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    margin-top: -4px;
+}
+
+.footer-section > .container {
+    display: grid;
+    width: 410px;
+}
+
+.footer-section > .container > .banner-image {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 30px;
+}
+
+.footer-section > .container > .banner-image > img {
+    height: 100px;
+}
+
+/* PA WRAPPER */
+
+.footer-section > .container > .pa-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 50px;
+}
+
+.footer-section > .container > .pa-wrapper > .phone-address {
+    display: flex;
+    align-items: center;
+    height: 50px;
+}
+
+.footer-section > .container > .pa-wrapper > .phone-address > .phone {
+    width: 140px;
+    text-align: right;
+}
+
+.footer-section > .container > .pa-wrapper > .phone-address >.phone a{
+    font-family: Poppins;
+    font-weight: light;
+    font-size: 1em;
+    color: #141414;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.footer-section > .container > .pa-wrapper > .phone-address >.phone a:hover{
+    font-family: Poppins;
+    letter-spacing: 2px;
+    font-size: 1em;
+    color: #141414;
+    text-decoration: none;
+}
+.footer-section > .container > .pa-wrapper > .phone-address > .address {
+    width: 180px;
+    text-align: left;
+}
+
+.footer-section > .container > .pa-wrapper > .phone-address > .address a {
+    font-family: Poppins;
+    font-weight: light;
+    font-size: 0.8em;
+    color: #141414;
+    text-decoration: none;
+    transition: 0.5s;
+    display: inline-block;
+    width: 180px;
+    margin-left: 40px;
+}
+
+.footer-section > .container > .pa-wrapper > .phone-address > .address a:hover {
+    font-family: Poppins;
+    letter-spacing: 2px;
+    font-size: 0.8em;
+    color: #141414;
+    text-decoration: none;
+}
+
+/* LINK WRAPPER */
+
+.footer-section > .container > .link-wrapper {
+    display: flex;
+    justify-content: center;
+    height: 40px;
+}
+
+.footer-section > .container > .link-wrapper > .navlink {
+    height: 30px;
+    color: #141414;
+    display: flex;
+    align-items: flex-start;
+    transition: 1s;
+    border-bottom: 0.5px solid transparent;
+    
+}
+
+.footer-section > .container > .link-wrapper >.navlink:hover {
+    border-bottom: 0.5px solid white;
+}
+
+.footer-section > .container > .link-wrapper >.navlink a {
+    color: #141414;
+    font-family: Poppins;
+    text-decoration: none;
+    font-size: 0.8em;
+}
+
+/* LOGOS */
+
+.footer-section > .container > .logo-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.footer-section > .container > .logo-wrapper > .logo-wrapper2 {
+    display: flex;
+    justify-content: center;
+    width: 300px;
+}
+
+.footer-section > .container > .logo-wrapper > .logo-wrapper2 > .logo {
+    margin: auto;
+    font-size: 2em;
+}
+
+
+.footer-section > .container > .logo-wrapper > .logo-wrapper2 > .logo a{
+    color: #141414;
+}
+
+.copyright {
+    display: inline-block;
+    vertical-align: bottom;
+    color: #141414;
+    font-family: Poppins;
+    font-weight: light;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 0.7em;
+}
+
+/* FOOTER IMPORT */
+footer {
+    width: 100%;
+    /* position: absolute;
+    bottom: 0; */
+    background: white;
+    padding: 100px 0 30px;
+    line-height: 20px;
+    font-size: 13px;
+}
+
+footer .col .logoziel{
+    font-family: Bogimber;
+    font-size: 2rem;
+    color: #4384b6;
+    cursor: default;
+    margin-top: 2rem;
+}
+
+.row {
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.col{
+    flex-basis: 25%;
+    padding: 10px;
+
+}
+
+.col img {
+    width: 100px;
+    height: 100px;
+}
+
+.logos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.col:nth-child(2), .col:nth-child(3){
+    flex-basis: 15%;
+}
+
+.col h3 {
+    width: fit-content;
+    margin-bottom: 40px;
+    position: relative;
+    color: #4384b6;
+    font-family: Garamond;
+    font-size: 1.3rem;
+    font-weight: 900;
+    padding-bottom: 0.7rem;
+    border-bottom: 2px solid #4384b6;
+    cursor: default;
+}
+
+.email-id {
+    width: fit-content;
+    margin: 20px 0;
+    color: #4384b6;
+    font-family: Garamond;
+    font-size: 1.3rem;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.email-id:hover{
+    color: black;
+}
+
+
+.col ul {
+    padding: 0;
+}
+
+.col ul li{
+    list-style: none;
+    margin-bottom: 12px;
+}
+
+.col ul li a{
+    text-decoration: none;
+    color: #4384b6;
+    font-family: Garamond;
+    font-size: 1.3rem;
+    transition: 0.5s;
+}
+
+.col ul li a:hover{
+    color: black;
+}
+.social-media{
+    display: flex;
+    justify-content: center;
+}
+.social-icons .fa-brands{
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 2rem;
+    color: #4384b6;
+    cursor: pointer;
+    margin-top: 2rem;
+    transition: 0.5s;
+}
+
+.social-icons .fa-brands:hover{
+    font-size: 2.5rem;
+
+}
+
+.social-icons {
+    display: flex;
+    justify-content: space-between;
+    width: 20vw;
+}
+
+hr{
+    width: 90%;
+    border: 0;
+    border-bottom: 0.1rem solid #4384b6;
+    margin: 20px auto;
+}
+
+.copyright {
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: Garamond;
+    color: #4384b6;
+    cursor: default;
+    padding-top: 10px;
+    margin-top: 19.2px;
+}
+
+.underline {
+    width: 100%;
+    height: 5px;
+    background: #2d648f;
+    border-radius: 3px;
+    position: absolute;
+    top: 25px;
+    left: 0;
+}
+
+.underline span{
+    width: 15px;
+    height: 100%;
+    background: #5da2d7;
+}
+
+.closer {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+@media only screen and (max-width:677px){
+    .row{
+        flex-wrap: nowrap;
+    }
+}
+
+@media only screen and (max-width:1024px){
+    .social-icons{
+        width: 30vw;
+    }
+}
+
+@media only screen and (max-width:528px){
+    .row{
+        flex-wrap: wrap;
+        width: 30%;
+        justify-content: center;
+    }
+
+    .col h3 {
+        width: auto;
+        text-align: center;
+    }
+}

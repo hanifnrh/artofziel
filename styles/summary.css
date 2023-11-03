@@ -1,0 +1,62 @@
+/* PAGE */
+
+.page {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.page > .wrapper {
+    width: 1000px;
+}
+
+.page > .wrapper > #iphone {
+    width: 370px;
+    margin: 25px 20px 0px 0px;
+    float: left;
+}
+
+.page > .wrapper p {
+    line-height: 30px;
+    letter-spacing: 1px;
+    text-align: justify;
+}
+
+/* SQUARE */
+.squares-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.squares-wrapper > .squares {
+    width: 1000px;
+}
+
+.squares-wrapper > .squares > .square {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: -6px;
+}
+
+.square > .image img{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.squares > .square > .text1{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 42px;
+}
+
+.squares > .square > .text2{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 42px;
+    text-align: end;
+}
