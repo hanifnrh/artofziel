@@ -176,7 +176,6 @@ body {
 .menu a {
     text-decoration: none;
     color: #4384b6;
-    font-weight: 500;
     font-size: 1.2rem;
     padding: 0.7rem;
 }
@@ -263,6 +262,9 @@ body {
     font-weight: 500;
 }
 
+.menuactive {
+    font-weight: bold;
+}
 .menu input[type="checkbox"]:checked~.menu-items {
     transform: translateX(0);
 }

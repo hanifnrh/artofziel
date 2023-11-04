@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,10 +19,11 @@
     <!-- DATA AOS -->
     <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
     <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
-    
+
     <link rel="icon" href="img/ziel.svg" type="image/x-icon" />
     <title>About Me</title>
 </head>
+
 <body style="overflow-x: hidden;">
     <!-- NAVBAR -->
     <div class="navbar">
@@ -70,16 +72,18 @@
                     <span class="line line3"></span>
                 </div>
                 <div class="menu-items">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Me</a></li>
-                    <li><a href="gallery.html">Gallery</a></li>
+                    <div class="menus">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html" class="menuactive">About Me</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                    </div>
                 </div>
 
             </div>
         </div>
 
     </div>
-        
+
     </div>
     <div class="scroller" data-speed="fast">
         <ul class="tag-list scroller__inner">
@@ -204,7 +208,7 @@
             </ul>
         </div>
     </div>
-    
+
 
     <!-- PAGE -->
 
@@ -217,15 +221,16 @@
         <div class="wrapper">
             <!-- img -->
             <div class="img-wrapper">
-                <img src="/img/profil.jpg" alt="" id="profil">
+                <img src="/img/profil.jpg" alt="" id="profil" loading="lazy">
             </div>
-            <p>Hi, I'm Ziel. A self-taught digital illustrator and I made this web on my own to showcase my artworks as a personal branding page of mine.</p>
+            <p>Hi, I'm Ziel. A self-taught digital illustrator and I made this web on my own to showcase my artworks as
+                a personal branding page of mine.</p>
         </div>
     </div>
 
     <div class="second">
         <div class="img-wrapper">
-            <img src="/img/me2.png" alt="Me2">
+            <img src="/img/me2.webp" alt="Me2" loading="lazy">
         </div>
 
         <div class="second-wrapper">
@@ -236,15 +241,17 @@
                             About Me
                         </h3>
                     </div>
-    
+
                     <div class="headertwo">
                         <h1>
                             Get to Know <i>Ziel</i> More
                         </h1>
                     </div>
-                    
+
                     <p>
-                        An undergraduate computer engineering student who pursue career in web design and UI/UX and doing art as hobby. I mostly draw portrait of human. I have been drawing digitally for approximately 8 years, versatile in using many drawing softwares.
+                        An undergraduate computer engineering student who pursue career in web design and UI/UX and
+                        doing art as hobby. I mostly draw portrait of human. I have been drawing digitally for
+                        approximately 8 years, versatile in using many drawing softwares.
                     </p>
                 </div>
             </div>
@@ -295,7 +302,8 @@
                         I don't accept
                     </h3>
                     <p>
-                        Though there are few genre/kind of drawings I can't do due to my skill range, there are furry, mecha, overcomplicated character, background only, and other than what I mentioned before.
+                        Though there are few genre/kind of drawings I can't do due to my skill range, there are furry,
+                        mecha, overcomplicated character, background only, and other than what I mentioned before.
                     </p>
                 </div>
 
@@ -425,7 +433,7 @@
             <div class="col">
                 <div class="logos">
 
-                    <img src="/img/breeze.png" alt="">
+                    <img src="/img/breeze.png" alt="" loading="lazy">
                     <p class="logoziel">artofziel</p>
                 </div>
             </div>
@@ -507,4 +515,5 @@
         AOS.init();
     </script>
 </body>
+
 </html>
