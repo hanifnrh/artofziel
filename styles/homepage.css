@@ -13,11 +13,21 @@
     src: url('/fonts/EBGaramond-VariableFont_wght.ttf') format('truetype');
 }
 
+body {
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
 .hero-section {
     background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
     url(/img/collage.webp);
-    height: 100%;
+    height: fit-content;
     font-style: italic;
+    width: 100%;
+    max-width: 1640px;
     background-position: center;
     background-repeat: repeat;
     background-size: contain;
@@ -72,7 +82,7 @@
 .second {
     background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)),
     url(/img/clouds.webp);
-    height: 100vh;
+    height: fit-content;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -81,6 +91,8 @@
     align-items: center;
     border-top: solid 0.3rem white;
     border-bottom: solid 0.3rem white;
+    padding: 200px 100px;
+    max-width: 1440px;
 }
 
 .second-wrapper {
@@ -88,14 +100,15 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 3rem;
 }
 
 .second .second-wrapper p{
     font-family: Garamond;
     font-size: 4rem;
     color: white;
-    padding: 6rem 6rem 0rem 6rem;
     text-align: center;
+    margin: 0;
     cursor: default;
 }
 
@@ -107,7 +120,6 @@
     font-size: 1.5rem;
     border-radius: 4rem;
     border: solid 0.2rem white;
-    margin-bottom: 2rem;
     transition: 0.5s;
 }
 
@@ -117,19 +129,20 @@
 }
 
 /* THIRD SLIDE */
-
-.third{
+.third {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 100vh;
+    height: fit-content;
+    padding: 200px 100px;
+    gap: 3rem;
 }
-
-.third-wrapper{
+.third-wrapper {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    gap: 3rem;
 }
 
 .third-wrapper p{
@@ -137,7 +150,7 @@
     font-size: 4rem;
     text-align: center;
     cursor: default;
-    margin-bottom: 2rem;
+    margin: 0;
 }
 
 .third a{
@@ -148,8 +161,6 @@
     font-size: 1.5rem;
     border-radius: 4rem;
     border: solid 0.2rem #4384b6;
-    margin-bottom: 5rem;
-    margin-top: 2rem;
     transition: 0.5s;
     text-align: center;
 }
@@ -160,7 +171,7 @@
 }
 
 .third-wrapper .works {
-    height: 350px;
+    height: 330px;
 }
 
 .third-wrapper .works img{
@@ -173,8 +184,8 @@
 }
 
 .third-wrapper .works img:hover{
-    width: 350px;
-    height: 350px;
+    width: 330px;
+    height: 330px;
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 
 }
@@ -185,10 +196,15 @@
     .second .second-wrapper p{
         font-size: 3rem;
     }
+
+    .third {
+        padding: 100px 100px;
+        gap: 3rem;
+    }
+
     .third-wrapper .works img {
         width: 200px;
         height: 200px;
-        margin: 1.2rem;
     }
 
     .third-wrapper .works img:hover{
@@ -202,13 +218,8 @@
         height: 200px;
     }
 
-    .third-wrapper p {
-        margin-top: 10rem;
-    }
-
     .third a {
         font-size: 1.3rem;
-        margin-top: 3rem;
     }
 }
 
@@ -233,12 +244,33 @@
         margin-bottom: 6rem;
     }
 
+    .third {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: fit-content;
+        padding: 100px 100px;
+        gap: 3rem;
+    }
+
+    .third-wrapper .works {
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        align-items: center;
+    }
+
     .third-wrapper .works img {
-        margin: 1rem;
+        width: 330px;
+        height: 330px;
     }
 
     .third-wrapper .works img:hover {
         margin: 0.6rem;
+        width: 350px;
+        height: 350px;
     }
 
     .third-wrapper p {
@@ -263,6 +295,18 @@
 }
 
 @media only screen and (max-width:560px){
+
+    .aboutpage {
+        padding: 100px 30px;
+        gap: 3rem;
+    }
+    .second {
+        padding: 100px 30px;
+    }
+    .second .second-wrapper p {
+        font-size: 1.6rem;
+        padding: 0;
+    }
     .third-wrapper .works img{
         width: 300px;
         height: 300px;
@@ -277,23 +321,15 @@
         display: flex;
     }
 
-
-    .third{
+    .third {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        height: 160vh;
+        height: fit-content;
+        padding: 100px 30px;
     }
 
-    .third-wrapper p {
-        margin-top: -5rem;
-    }
-
-    .third a {
-        margin-top: 50rem;
-        margin-bottom: 0;
-    }
 }
 
     @media only screen and (max-width:550px){
@@ -304,6 +340,10 @@
 
         .second-wrapper a {
             font-size: 1rem;
-            margin-bottom: 4rem;
+            margin-bottom: 0;
+        }
+
+        .bgvideo > .back-video {
+            opacity: 0;
         }
     }
